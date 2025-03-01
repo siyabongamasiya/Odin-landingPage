@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            border: 3px solid red;
+        } */
+
+        p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            padding: 84px;
+            width: 100%;
+            background-color: #1F2937;
+        }
+
+        .navsection {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 8px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .headerlogo {
+            flex: 1;
+            color: #F9FAF8;
+        }
+
+        .headerlinks {
+            flex: 1;
+            color: #E5E7EB;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .headerlink{
+            flex: 1;
+        }
+
+        .headercontentsection {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            padding: 8px;
+        }
+
+        .textcontentsection {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-evenly;
+            align-items: start;
+        }
+
+        .programmingimage {
+            flex: 1;
+        }
+
+        .maintitle {
+            font-size: 48px;
+            color: #F9FAF8
+        }
+
+        .subtitle ,.programminglanguagetitle,.calltoactionP2,.footertext{
+            font-size: 18px;
+            color: #E5E7EB;
+        }
+
+        #headingbutton {
+            background-color: #3882F6;
+            border: 1px solid black;
+            border-radius: 10%;
+            padding: 8px;
+            color:#F9FAF8;
+        }
+
+        #calltoactionbutton {
+            background-color: #3882F6;
+            border: 1px solid #F9FAF8;
+            border-radius: 10%;
+            padding: 8px;
+            color:#F9FAF8;
+        }
+
+        .infosection {
+            display: flex;
+            width: 100%;
+            padding: 84px;
+            flex-direction: column;
+            background-color: #F9FAF8;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .infotitle {
+            font-size: 36px;
+            color: #1F2937;
+        }
+
+        .programminglanguageimage {
+            width: 60%;
+            height: 60%;
+            border: 2px solid #3882F6;
+            border-radius: 10%;
+        }
+
+        .programminglanguages {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quotesection {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            padding: 84px;
+            justify-content: center;
+            align-items: center;
+            background-color: #E5E7EB;
+        }
+
+        .quotetext {
+            color: #1F2937;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .calltoactionsection {
+            width: 100%;
+            padding: 84px;
+            justify-content: center;
+            align-items: center;
+            background-color: #F9FAF8;
+        }
+
+        .calltoactionsubsection {
+            display: flex;
+            border-radius: 16px;
+            flex: 1;
+            padding: 32px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3882F6;
+        }
+
+        .calltoactionP1 {
+            font-size: 24px;
+            color: white;
+        }
+
+        .footer {
+            display: flex;
+            width: 100%;
+            justify-content:center;
+            align-items: center;
+            padding: 84px;
+            background-color: #1F2937;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--nav section-->
+        <section class="navsection">
+            <p class="headerlogo"> Siyabonga's Portfolio</p>
+            <section class="headerlinks">
+                <p class="headerlink"> Languages </p>
+                <p class="headerlink"> Projects</p>
+                <p class="headerlink"> Contributions</p>
+            </section>
+        </section>
+
+        <!--header content section-->
+        <section class="headercontentsection">
+            <section class="textcontentsection">
+                <p class="maintitle"> Languages Learned <br>
+                    <span class="subtitle">These are the languages i 
+                        have introduced myself to
+                        and some experienced at. </sp>
+                </p>
+                <button id="headingbutton">See more</button>
+            </section>
+            <img id="programmingimage" src="./assets/programming.jpeg" alt="programming pic">
+        </section>
+    </header>
+
+    <!--info section-->
+    <section class="infosection">
+        <p class="infotitle">Languages List</p>
+        <section class="programminglanguages">
+            <figure>
+                <img class="programminglanguageimage" src="./assets/kotlin.jpeg">
+                <figcaption style="color: black;" class="programminglanguagetitle">
+                    Kotlin
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img class="programminglanguageimage" src="./assets/javascript.png">
+                <figcaption style="color: black;" class="programminglanguagetitle">
+                    javascript
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img class="programminglanguageimage" src="./assets/python.jpeg">
+                <figcaption style="color: black;" class="programminglanguagetitle">
+                    Python
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img class="programminglanguageimage" src="./assets/java.png">
+                <figcaption style="color: black;" class="programminglanguagetitle">
+                    Java
+                </figcaption>
+            </figure>
+        </section>
+    </section>
+
+    <!--quote section-->
+    <section class="quotesection">
+        <blockquote class="quotetext">
+            In order to be a master at something ,
+            practice should be your close friend.
+        </blockquote>
+        <p style="color: black; font-weight: bold;">-Me</p>
+    </section>
+
+    <!--call to action section-->
+    <section class="calltoactionsection">
+        <section class="calltoactionsubsection">
+            <section style="display: flex; flex-direction: column;">
+                <p class="calltoactionP1"> Contacts</p>
+                <p class="calltoactionP2">click to go to my contacts</p>
+            </section>
+            <button id="calltoactionbutton">Contact me</button>
+        </section>
+        
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <p class="footertext">Copyright @ siyabonga ltd</p>
+    </section>
+</body>
+</html>
